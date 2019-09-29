@@ -1,0 +1,367 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head id="Head1">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><title>
+
+</title>
+    <style>
+        @media all
+        {
+            .tablecell
+            {
+                width: 100%;
+                margin: 0 auto;
+            }
+            #gvMain
+            {
+                width: 100%;
+                padding: 5px;
+                color: #333;
+                font-family: Arial;
+                line-height: 24px;
+            }
+            #gvMain th
+            {
+                text-align: left;
+                padding: 5px 15px;
+                background-color: #507CD1;
+                -webkit-print-color-adjust: exact;
+            }
+            #gvMain td
+            {
+                text-align: left;
+                padding: 5px 15px;
+                background-color: #EFF3FB;
+                -webkit-print-color-adjust: exact;
+            }
+            .tablecell td
+            {
+                padding: 5px;
+                color: #333;
+                font-family: Arial;
+                line-height: 24px;
+            }
+            .tdTextReight, #FormView1_lblFIELD1, #FormView1_lblFIELD2, #FormView1_lblFIELD3, #FormView1_lblFIELD4, #FormView1_lblFIELD5, #FormView1_lblFIELD6, #FormView1_lblFIELD7, #FormView1_lblFIELD8, #FormView1_lblFIELD9, #FormView1_lblFIELD10, #FormView1_lblFIELD11, #FormView1_lblFIELD12, #FormView1_lblFIELD13, #FormView1_lblFIELD14, #FormView1_lblFIELD15, #FormView1_lblFIELD16, #FormView1_lblFIELD17, #FormView1_lblFIELD18, #FormView1_lblFIELD19, #FormView1_lblFIELD20
+            {
+                font-weight: bold;
+            }
+            #FormView1_imgLogo
+            {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <form method="post" action="./PrintMerchant.aspx?tran_id=ADGTM7554AB2E1" id="form1">
+<div class="aspNetHidden">
+<input name="__VIEWSTATE" id="__VIEWSTATE" value="u0HEaucgjf1eJJYXW8PjAyYYuRDybI2wBD0hAmfnbCInX0xPw4ePti41BC0Q4yLiOj63pWGc0+EjQ0mHTUN0rC+ghtVsApRFZLVdbI7FMBp4DzymnoWSPINA9Rt9m+KyfsMy+a16ipTY4Oz+LDV1uogOIFC5nPJTEoXD3+Set03ofDemg1Dk7+zC3CFvrbiwAOKvPF12CHag6c7fuJbzpA4IkQa4j2K2DG5sNa2ounCmyDycA4UXiiCSE3l5BMRj56GYIZBXUChuWkxvfkY4VKgsk8ajzrxqEciLvxGDXvEQtKQ333h1hDUR1JKvdX49l2W0/hNl5v/KGExnCi7YePeFJleYmMDhxjBqI8bB1PjUtVeMofwF9o0HSS/0WlGvdPU4r9WGqARHa5XM9M/yynidAT45B2Tic0LUk+Zhoh1VON2kpK7gYocieRGS/Ln/GqPsuY0af38idP1xDix9HDYmKeohuvuofqgDjxNWJMlqh6qphO8eSv0z0gwAPMv6+fwTmJxuOd0rvQ6rQwXaYm8haHTeagTS1Bs5x7mFJO212GTCyKPNT304hzUrHOkA/p8UgpHFdwVhmmuySC24wrfYk5PHk33SbbFzllT21UFInttwblhsWGg9s/fRmk4PlxpVJKPuIVkMCQSH/PcXuhUVgetLT7yq5nYhT/b4Cra3Srqi/bQIq4FPlNr2F/xlcla38JmFcG2nWBgJ69mTixqHLX/BPJXGtSUuq+pgikiUxBU1rTbGSvvIjQJZ9JdTkea3JuOPgHlMNSwtYjg3gdtOeFy7VVPQqP/1WmQVhGUde0CKFuJR7MyQtfdnj1qRlRLk/KA24xRxUfrihde5O5h1iTf+IZ04tLUHEGL2oXWuDZmMCCOWb1B2m06k844LD0j6PIkYKaiXKFPQLg0ZJiZgkCU3swYPGs5Gj1Wmge3FH6Yta87MmhTKtEe9uQxW/FqwBPsrXPbOB9rdl/BP8Ct3xC7pAH8SOzxuNDf6SATiLUhB45hrbaBfBAPFGyK0TCKQeaNw18Bc5diWo6MYiHj7/3/pU31ZEbFxNeNMDsmDTiZPimCHofBR9d6HjTiCJvG9Bm2NvlQc4kSaHRVAWDuhTT2k6pABUrcJBZWPMeWWRPDNlyIo4+BR92gBV+5UvvfRkZaXZWvnjqtgowvxll9lmqU7RYlD0FdGwti+9HH/BiXH8nALTI/Lz2ICXuqljfRTa+3JxuDyp+vppEUWzKpW+uSLeE1HztN4ouyLijmAUNabL3rsFw9zhaxXRDR9qd6syyKbhfWUIrSBTxJlyVlm3y5aeYHMsKhiJMwmolK32l7PO5P2hGwNMDbsYx1A3DqUaz86NzyRfl9nR2oZYL3wMjTF8sqkUIYD5cgFgZ//OwJYqzehdKkFXQ+Mo+WZsOqnneK2TTBgg+CiUVgOJUk52REwQApNffVw0ICAV6/v8Q7+rZhpkp1EfHQJpYeUyw03tspckjvVQNxtW+WpWnp/44zez67NJGQI3HOHVPr1PGYhP+uCvkwG9RjeZv+EIf9ezZzWEb9NYQ/tQcWjQhXzXuO5qgMWhxQ7Qi+b9v+pYJbuN0x8tcb+0pKVDd2kqkA9StKrc5QFyyw/0tyJHsWAPFDWFzUu9G4Ea9UpgmoUCSwU320HZpVHGFhojM6V06RR1IcSqldos8LBLDRlyq3UgN4=" type="hidden">
+</div>
+
+<div class="aspNetHidden">
+
+	<input name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="883A2870" type="hidden">
+	<input name="__VIEWSTATEENCRYPTED" id="__VIEWSTATEENCRYPTED" value="" type="hidden">
+</div>
+    <div>
+        <div id="Panel2">
+	
+            <table align="center">
+                <tbody><tr>
+                    <td>
+                        <table id="FormView1" style="border-collapse:collapse;" cellspacing="0">
+		<tbody><tr>
+			<td colspan="2">
+                                <table style="width: 100%; border: none; border-collapse: collapse; font-family: Verdana;
+                                    font-size: 9px;" align="center">
+                                    <tbody><tr>
+                                        <td align="center">
+                                            <img id="FormView1_imgLogo" src="PrintMerchant.aspx_files/PNBlogo_hindi_eng.jpg">
+                                        </td>
+                                    </tr>
+                                </tbody></table>
+                                <table style="width: 100%; border: thin solid #000000; border-bottom: none; border-collapse: collapse;
+                                    background-color: #C0C0C0;" align="center">
+                                    <tbody><tr>
+                                        <td>
+                                            Name of Institution :
+                                        </td>
+                                        <td>
+                                            <span id="FormView1_lblInstitution" class="lblCaption">AKHILESH DAS GUPTA INSTITUTE OF TECHNOLOGY AND MANAGEMENT</span>
+                                            -<span id="FormView1_INST_IDLabel" class="lblCaption">ADGTM</span>
+                                        </td>
+                                    </tr>
+                                </tbody></table>
+                                <table style="width: 100%; border: thin solid #000000; border-bottom: none; border-collapse: collapse;
+                                    background-color: #FFFFFF;" align="center">
+                                    <tbody><tr>
+                                        <td class="tdTextReight">
+                                            Collection Code :
+                                        </td>
+                                        <td>
+                                            <span id="FormView1_lblCollectionCode" class="lblCaption">ADGITM</span>
+                                        </td>
+                                        <td class="tdTextReight">
+                                            Transaction Date :
+                                        </td>
+                                        <td>
+                                            <span id="FormView1_lblTransactionDate" class="lblCaption">09-Aug-2018</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="tdTextReight">
+                                            Transaction ID :
+                                        </td>
+                                        <td>
+                                            <span id="FormView1_lblTransactionID" class="lblCaption">ADGTM7554AB2E1</span>
+                                        </td>
+                                        <td class="tdTextReight">
+                                            Merchant Order No. :
+                                        </td>
+                                        <td>
+                                            <span id="FormView1_lblMerchantOrderNo" class="lblCaption">16720891</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="tdTextReight">
+                                            Status Description :
+                                        </td>
+                                        <td>
+                                            <span id="FormView1_lblStatusDescription" class="lblCaption">Transaction is Successful</span>
+                                        </td>
+                                        <td class="tdTextReight">
+                                            Status :
+                                        </td>
+                                        <td>
+                                            <span id="FormView1_lblStatus" class="lblCaption">S</span>
+                                        </td>
+                                    </tr>
+                                </tbody></table>
+                                <table id="FormView1_tbMain" style="width: 100%; border: thin solid #000000;
+                                    border-collapse: collapse; background-color: #FFFFFF;" align="center">
+				<tbody><tr>
+					<td>
+                                            <table style="width: 75%; background-color: #FFFFFF;" align="center">
+                                                <tbody><tr>
+                                                    <td>
+                                                        <span id="FormView1_lblFIELD1">ENROLLMENT NO</span>
+                                                    </td>
+                                                    <td align="right">
+                                                        <span id="FormView1_lblFeeAmountField1" class="lblCaption">05815603116</span>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <span id="FormView1_lblFIELD2">STUDENT NAME</span>
+                                                    </td>
+                                                    <td align="right">
+                                                        <span id="FormView1_lblFeeAmountField2" class="lblCaption">Shubham Sharma</span>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <span id="FormView1_lblFIELD3">FATHER NAME</span>
+                                                    </td>
+                                                    <td align="right">
+                                                        <span id="FormView1_lblFeeAmountField3" class="lblCaption">Ram Prakash Sharma</span>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <span id="FormView1_lblFIELD4">COURSE</span>
+                                                    </td>
+                                                    <td align="right">
+                                                        <span id="FormView1_lblFeeAmountField4" class="lblCaption">B-tech</span>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <span id="FormView1_lblFIELD5">BRANCH</span>
+                                                    </td>
+                                                    <td align="right">
+                                                        <span id="FormView1_lblFeeAmountField5" class="lblCaption">Information Technology</span>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <span id="FormView1_lblFIELD6">SEMESTER</span>
+                                                    </td>
+                                                    <td align="right">
+                                                        <span id="FormView1_lblFeeAmountField6" class="lblCaption">5</span>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <span id="FormView1_lblFIELD7">MOBILE NO</span>
+                                                    </td>
+                                                    <td align="right">
+                                                        <span id="FormView1_lblFeeAmountField7" class="lblCaption">9953490748</span>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <span id="FormView1_lblFIELD8">ANNUAL FEE</span>
+                                                    </td>
+                                                    <td align="right">
+                                                        <span id="FormView1_lblFeeAmountField8" class="lblCaption">107500.00</span>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <span id="FormView1_lblFIELD9">SUMMER TRAINING FEE</span>
+                                                    </td>
+                                                    <td align="right">
+                                                        <span id="FormView1_lblFeeAmountField9" class="lblCaption">0</span>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <span id="FormView1_lblFIELD10">LIBRARY DUES</span>
+                                                    </td>
+                                                    <td align="right">
+                                                        <span id="FormView1_lblFeeAmountField10" class="lblCaption">0</span>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <span id="FormView1_lblFIELD11">DUP I-CARD FEE</span>
+                                                    </td>
+                                                    <td align="right">
+                                                        <span id="FormView1_lblFeeAmountField11" class="lblCaption">0</span>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <span id="FormView1_lblFIELD12">RE-APPEAR FEE</span>
+                                                    </td>
+                                                    <td align="right">
+                                                        <span id="FormView1_lblFeeAmountField12" class="lblCaption">0</span>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <span id="FormView1_lblFIELD13">RE-ADMISSION FEE</span>
+                                                    </td>
+                                                    <td align="right">
+                                                        <span id="FormView1_lblFeeAmountField13" class="lblCaption">0</span>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <span id="FormView1_lblFIELD14">RE-CHECKING FEE</span>
+                                                    </td>
+                                                    <td align="right">
+                                                        <span id="FormView1_lblFeeAmountField14" class="lblCaption">0</span>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <span id="FormView1_lblFIELD15">OTHER FEE</span>
+                                                    </td>
+                                                    <td align="right">
+                                                        <span id="FormView1_lblFeeAmountField15" class="lblCaption">0</span>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <span id="FormView1_lblFIELD16"></span>
+                                                    </td>
+                                                    <td align="right">
+                                                        <span id="FormView1_lblFeeAmountField16" class="lblCaption"></span>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <span id="FormView1_lblFIELD17"></span>
+                                                    </td>
+                                                    <td align="right">
+                                                        <span id="FormView1_lblFeeAmountField17" class="lblCaption"></span>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <span id="FormView1_lblFIELD18"></span>
+                                                    </td>
+                                                    <td align="right">
+                                                        <span id="FormView1_lblFeeAmountField18" class="lblCaption"></span>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <span id="FormView1_lblFIELD19"></span>
+                                                    </td>
+                                                    <td align="right">
+                                                        <span id="FormView1_lblFeeAmountField19" class="lblCaption"></span>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <span id="FormView1_lblFIELD20"></span>
+                                                    </td>
+                                                    <td align="right">
+                                                        <span id="FormView1_lblFeeAmountField20" class="lblCaption"></span>
+                                                    </td>
+                                                </tr>
+                                            </tbody></table>
+                                        </td>
+				</tr>
+			</tbody></table>
+			
+                                <table style="width: 100%; border: thin solid #000000; border-top: none; border-collapse: collapse;
+                                    background-color: #FFFFFF; font-family: Verdana; font-size: medium; font-weight: bold;
+                                    font-style: normal; color: #000000;" align="center">
+                                    <tbody><tr>
+                                        <td>
+                                            <span>Total Fee Paid</span>
+                                        </td>
+                                        <td align="right">
+                                            <span id="FormView1_lblTotalFeePaid">107500.00</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                </tr></tbody></table>
+                            </td>
+		</tr>
+	</tbody></table>
+                        <table style="width: 100%; border: thin solid #000000; border-collapse: collapse;
+                        background-color: #FFFFFF;" align="center">
+                        <tbody><tr>
+                            <td>
+                                <div>
+
+	</div>
+                                
+                            </td>
+                        </tr>
+                    </tbody></table>
+                        <table style="width: 100%; border-collapse: collapse" align="center">
+                            <tbody><tr>
+                                <td align="center">
+                                    <input id="Button2" value="Print" onclick="window.print();" class="btnDefault" type="button">
+                                </td>
+                            </tr>
+                        </tbody></table>
+                    </td>
+                </tr>
+            </tbody></table>
+        
+</div>
+    </div>
+    </form>
+    <script type="text/javascript">
+        if (!String.prototype.trim) {
+            String.prototype.trim = function () {
+                return this.replace(/^\s+|\s+$/g, '');
+            };
+        }
+
+        if (document.getElementById('FormView1_tbMain')) {
+            var rows = document.getElementById('fvMain_tbMain').rows;
+            for (var i = 0; i < rows.length; i++) {
+                var txt = rows[i].textContent || rows[i].innerText;
+                if (txt.trim() === "") rows[i].style.display = "none";
+            }
+        }
+    </script>
+
+
+</body></html>
