@@ -128,7 +128,7 @@ header.open nav{
 
 /*intro end*/
 /*about us start*/
-#about-us{
+#about-me{
     background-image:linear-gradient(rgba( 241, 175, 101 ,1), rgba(155,55,55,0.6)), url(../images/about-img.jpg);
     background-size: cover;
 }   
@@ -152,12 +152,12 @@ header.open nav{
     text-align: center;
     font-size: 17px;
 }
-#about-us .work .work-icon{
+#about-me .work .work-icon{
     font-size: 3em;
     color: #5e7ce2;
     padding: 10px 0px;
 }
-#about-us .work .work-title{
+#about-me .work .work-title{
     font-size: 1.3em;
     font-weight: bold;
     padding: 10px 0px;
@@ -314,8 +314,8 @@ header.open nav{
 }
 /*pricing end*/
 
-/*team start*/
-#team{
+/*work start*/
+#work{
     background-image:linear-gradient(rgba( 241, 175, 101 ,1), rgba(155,55,55,0.6)), url(../images/team.png);
     background-size: cover;
     min-height: 1000px;
@@ -349,7 +349,12 @@ header.open nav{
 .member .member-social a:hover{
     color: #5e7ce2;
 }
-/*team end*/
+
+.member-img{
+        height: 150px;
+        overflow: hidden;
+}
+/*work end*/
 
 
 /*contact us start*/
@@ -444,7 +449,7 @@ ul{
         display: inline-block;
     }
     #intro{
-        height: 600px;
+        height: 900px;
     }
     .intro-text{
         top: 250px;
@@ -471,10 +476,6 @@ ul{
     }
     #portfolio .call-to-action{
         margin:20px 15px;
-    }
-    .member-img{
-        height: 250px;
-        overflow: hidden;
     }
     footer{
         vertical-align: text-top;
